@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tecnomax - Contacto</title>
+</head>
+<style>body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.contacto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contacto h2 {
+    color: #333;
+}
+
+.informacion-contacto p {
+    margin: 10px 0;
+}
+
+.formulario-contacto {
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+    </header>
+    <main>
+        <section class="contacto">
+            <h2>Contacto - Tecnomax</h2>
+            <p>¿Tienes alguna pregunta o consulta? ¡Estamos aquí para ayudarte!</p>
+            
+            <div class="informacion-contacto">
+                <p><strong>Correo Electrónico:</strong> Tecnomaxcm@gmail.com</p>
+                <p><strong>Teléfono:</strong> +52 648 109 6634</p>
+                <p><strong>Dirección:</strong> Calle union de colonos, 915 Cd.Camargo</p>
+            </div>
+
+            <div class="formulario-contacto">
+                <h3>Envíanos un mensaje</h3>
+                <form action="enviar_formulario.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="file:///C:/Users/dylan/OneDrive/Desktop/Trabajo/Empresa/index.html">volver a la pagina principal</a>
+    </footer>
+</body>
+
